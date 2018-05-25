@@ -31,7 +31,7 @@
 			$window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
-				}, 100);
+				}, 0);
 			});
 
 		// Fix: Placeholder polyfill.
@@ -53,7 +53,7 @@
 						else
 							$wrapper.css('height', '100vh');
 
-					}, 250);
+					}, 0);
 
 				}).triggerHandler('resize.flexbox-fix');
 
@@ -72,7 +72,7 @@
 				}
 
 		// Main.
-			var	delay = 325,
+			var	delay = 0,
 				locked = false;
 
 			// Methods.
@@ -115,7 +115,7 @@
 								// Unmark as switching.
 									setTimeout(function() {
 										$body.removeClass('is-switching');
-									}, (initial ? 1000 : 0));
+									}, (initial ? 0 : 0));
 
 								return;
 
@@ -156,7 +156,7 @@
 													locked = false;
 												}, delay);
 
-										}, 25);
+										}, 0);
 
 								}, delay);
 
@@ -195,7 +195,7 @@
 													locked = false;
 												}, delay);
 
-										}, 25);
+										}, 0);
 
 								}, delay);
 
@@ -285,7 +285,7 @@
 											locked = false;
 										}, delay);
 
-								}, 25);
+								}, 0);
 
 						}, delay);
 
