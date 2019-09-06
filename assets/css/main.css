@@ -1330,10 +1330,10 @@
 	}
 
 	#header {
-		-moz-animation: header 1s 2.25s forwards;
-		-webkit-animation: header 1s 2.25s forwards;
-		-ms-animation: header 1s 2.25s forwards;
-		animation: header 1s 2.25s forwards;
+		-moz-animation: header 0.7s 1.5s forwards;
+		-webkit-animation: header 0.7s 1.5s forwards;
+		-ms-animation: header 0.7s 1.5s forwards;
+		animation: header 0.7s 1.5s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -1370,10 +1370,10 @@
 		}
 
 			#header nav li {
-				-moz-animation: nav-icons 0.5s ease-in-out forwards;
-				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
-				-ms-animation: nav-icons 0.5s ease-in-out forwards;
-				animation: nav-icons 0.5s ease-in-out forwards;
+				-moz-animation: nav-icons 0.2s ease-in-out forwards;
+				-webkit-animation: nav-icons 0.2s ease-in-out forwards;
+				-ms-animation: nav-icons 0.2s ease-in-out forwards;
+				animation: nav-icons 0.2s ease-in-out forwards;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -1469,10 +1469,10 @@
 			}
 
 				#header nav a:before {
-					-moz-transition: all 0.2s ease-in-out;
-					-webkit-transition: all 0.2s ease-in-out;
-					-ms-transition: all 0.2s ease-in-out;
-					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.1s ease-in-out;
+					-webkit-transition: all 0.1s ease-in-out;
+					-ms-transition: all 0.1s ease-in-out;
+					transition: all 0.1s ease-in-out;
 					border-radius: 100%;
 					border: solid 1px #fff;
 					display: block;
