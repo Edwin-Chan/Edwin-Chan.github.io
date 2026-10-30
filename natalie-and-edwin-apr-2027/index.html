@@ -589,7 +589,7 @@ html[data-lang="zh"] #thanks-line{font-family:var(--zh);font-size:var(--fs-verse
         <h3><span class="en">When</span><span class="zh">日期</span></h3>
         <div>
           <p class="main"><span class="en">Saturday, 24 April 2027</span><span class="zh">二〇二七年四月二十四日（星期六）</span></p>
-          <p class="sub"><span class="en">Timings will be in the formal invitation.</span><span class="zh">時間安排將於正式請柬中通知。</span></p>
+          <p class="sub"><span class="en">Full schedule to follow in the formal invitation.</span><span class="zh">時間安排將於正式請柬中通知。</span></p>
         </div>
       </div>
       <div class="row">
@@ -742,7 +742,7 @@ const t = (en, zh) => root.dataset.lang === 'zh' ? zh : en;
    Each line is one line on screen; zh has no line-end punctuation (centred poetry). */
 const COPY = { e: {
   // postcard letter (A3) · our story (LA → Bay Area ⇄ Vancouver → 6½ years) · ending (C3)
-  letter: { en: ['Come April, our heads', 'will be in the clouds,', 'and so will our wedding,', 'high above Central.', 'It won’t feel complete', 'without you up there with us.'],
+  letter: { en: ['With spring in the air', 'and our heads in the clouds,', 'we’ll celebrate our wedding', 'high above Central.', 'It won’t feel complete', 'without you up there with us.'],
             zh: ['四月春暖花開', '我們把人生最重要的一天', '留在中環的雲端', '只等你來', '一起見證'] },
   b1: { en: ['It started in LA,', 'somewhere between the palm trees', 'and the sunshine,', 'with a simple hello.'],
         zh: ['洛城初見', '陽光正好', '一句你好', '從此就是你'] },
@@ -1023,7 +1023,7 @@ function renderDeadline(){
   if (!RSVP_BY) { el.hidden = true; return; }
   const d = new Date(RSVP_BY + 'T00:00:00+08:00');
   el.hidden = false;
-  el.textContent = t(`Kindly reply by ${d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Hong_Kong' })}`,
+  el.textContent = t(`Please kindly reply by ${d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Hong_Kong' })}`,
                      `敬請於${+RSVP_BY.slice(0, 4)}年${+RSVP_BY.slice(5, 7)}月${+RSVP_BY.slice(8, 10)}日前回覆`);
 }
 
