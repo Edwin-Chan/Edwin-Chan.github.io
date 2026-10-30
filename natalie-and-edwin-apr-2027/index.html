@@ -816,6 +816,13 @@ function setPlaying(on){
   mBtn.setAttribute('aria-pressed', String(on));
 }
 mBtn.onclick = () => { if (song.paused) playSong(); else { song.pause(); setPlaying(false); } };
+// pause when the page goes to the background (switching tabs/apps, locking the phone); resume on return if it was playing
+let resumeOnShow = false;
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) { if (!song.paused) { resumeOnShow = true; song.pause(); setPlaying(false); } }
+  else if (resumeOnShow) { resumeOnShow = false; song.play().then(() => setPlaying(true)).catch(() => {}); }
+});
+addEventListener('pagehide', () => { if (!song.paused) { resumeOnShow = true; song.pause(); setPlaying(false); } });
 
 /* envelope */
 const env = $('env');
