@@ -745,7 +745,7 @@ html[data-lang="zh"] #thanks-line{font-family:var(--zh);font-size:var(--fs-verse
    MUSIC_START   : seconds into the song to begin from (e.g. 42 to start at the chorus). 0 = from the top. */
 const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbybEDdN1xmdkSjFxf5bPScRMyXuJsumG8xr2tuK-Qb4G2vL2lvf7Vzu7jvKNs20NWmg/exec";
 const RSVP_BY = "2027-03-24";
-const MUSIC_SRC = "music/our-song.mp3";
+const MUSIC_SRC = "music/our-song.mp3?v=2"; // bump v when the song changes (Cloudflare caches the mp3 for hours)
 const MUSIC_START = 0;
 const WEDDING_DAY = "2027-04-24T00:00:00+08:00";
 const MAX_EXTRA_GUESTS = 5;
